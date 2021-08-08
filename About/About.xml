@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>鹿狐DeerFox</name>
+  <author>Lowsen/Abrel</author>
+  <supportedVersions>
+    <li>1.3</li>
+  </supportedVersions>
+  <description>鹿狐，来自偏僻遥远的星球，它们的身份鲜为人知。
+
+就像是把狐和鹿的基因捣碎再混合一样，鹿狐们保留了狐和鹿的某些基因，就像是神的根据喜好做的恶作剧一样。</description>
+  <!--一些东西用中文写也是可以的！XD-->
+</ModMetaData>

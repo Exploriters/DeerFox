@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef ParentName="BasePlayerPawnKind">
+    <defName>Colonist_DeerFox</defName>
+    <label>鹿狐</label>
+    <defaultFactionType>PlayerColony</defaultFactionType>
+    <chemicalAddictionChance>0.06</chemicalAddictionChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+    <race>DeerFox</race>
+    <combatPower>30</combatPower>
+    <isFighter>false</isFighter>
+    <apparelMoney>350~600</apparelMoney>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <initialWillRange>0~0</initialWillRange>
+    <backstoryCryptosleepCommonality>1</backstoryCryptosleepCommonality>
+    <techHediffsChance>0.03</techHediffsChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+      <li>ImplantEmpireCommon</li>
+    </techHediffsTags>
+    <initialResistanceRange>13~21</initialResistanceRange>
+  </PawnKindDef>
+</Defs>
