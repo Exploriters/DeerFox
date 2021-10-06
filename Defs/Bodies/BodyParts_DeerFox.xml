@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <BodyPartDef>
+    <defName>Horn_DeerFox</defName>
+    <label>鹿角</label>
+    <hitPoints>100</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>false</skinCovered>
+    <solid>true</solid>
+    <bleedRate>0</bleedRate>
+  </BodyPartDef>
+  <BodyPartDef>
+    <defName>Tail_DeerFox</defName>
+    <label>尾巴</label>
+    <hitPoints>30</hitPoints>
+    <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+    <skinCovered>true</skinCovered>
+    <bleedRate>0.2</bleedRate>
+  </BodyPartDef>
+</Defs>

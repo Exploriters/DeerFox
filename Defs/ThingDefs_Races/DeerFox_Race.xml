@@ -290,8 +290,75 @@
         <immuneToXenophobia>false</immuneToXenophobia>
         <minAgeForAdulthood>26</minAgeForAdulthood>
         <humanRecipeImport>true</humanRecipeImport>
-        <alienPartGenerator />
+        <alienPartGenerator>
+          <aliencrowntypes>
+            <li>DeerFox_Head</li>
+          </aliencrowntypes>
+          <alienbodytypes>
+            <li>Thin</li>
+          </alienbodytypes>
+          <useGenderedBodies>false</useGenderedBodies>
+          <useGenderedHeads>false</useGenderedHeads>
+          <colorChannels>
+            <li>
+              <name>skin</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.53,0.47,0.46,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.949,0.991,0.851,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.161,0.066,0.239,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.212,0.212,0.212,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.733,0.541,0.407,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.761,0.251,0.251,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
+          </colorChannels>
+        </alienPartGenerator>
       </generalSettings>
+      <graphicPaths>
+        <li>
+          <head>Thing/Pawn/DeerFox/Head/</head>
+        </li>
+      </graphicPaths>
+      <styleSettings>
+        <li>
+          <key>HairDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>BeardDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+        <li>
+          <key>TattooDef</key>
+          <value>
+            <hasStyle>false</hasStyle>
+          </value>
+        </li>
+      </styleSettings>
     </alienRace>
   </AlienRace.ThingDef_AlienRace>
 </Defs>

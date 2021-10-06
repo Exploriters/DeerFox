@@ -39,5 +39,8 @@
         <li>Synthread</li>
       </thingDefs>
     </apparelStuffFilter>
+    <allowedCultures>
+      <li>Cultures_DeerFox</li>
+    </allowedCultures>
   </FactionDef>
 </Defs>
