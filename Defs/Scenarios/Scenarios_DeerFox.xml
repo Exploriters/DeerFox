@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ScenarioDef>
+    <defName>DeerFox_Stat</defName>
+    <label>诞生[DeerFox]</label>
+    <description>诞生，是一件十分神奇的事\n
+繁星中，存在着那数不尽的神明，一位名为狐疑之神的小小神明在角落里诞生了…\n
+但祂并不是带着美好的东西而降生，祂由无尽的猜疑，嫉妒，背信弃义在人们互相不信任的长河里诞生出来，这贯彻了祂的性格。\n
+祂排外，不相信任何事物，甚至质疑着自己的存在，却在难熬的日子里，创造出了其他神明不屑一顾的，被祂永远爱着的生命。\n
+&lt;color=#b06868&gt;&lt;b&gt;这是你们的诞生，你们知道祂是自己永恒的信仰，其他的生命体都不可以相信，只有他们这个名为“鹿狐”的种族与神明之间可以互相信任。\n
+狐疑之神喜欢狡黠的狐狸，也喜欢可爱的鹿，于是乎你们的种族就成了鹿狐，你们永远爱着你们的神明。\n
+在狐疑之神的心里，唯一可以信任的，爱着的，如此可爱的你们啊。\n&lt;/b&gt;&lt;/color&gt;
+只是……\n
+&lt;color=#b06868&gt;&lt;b&gt;我们的神明，去了哪里？\n&lt;/b&gt;&lt;/color&gt;
+让我们意外，令你们害怕的事发生了，神明不见了。\n
+信仰真的就这样，突然的，消失了吗……？\n
+“……我们会找到祂的。”你们坚定不移。\n
+出发吧，在浩渺的繁星里寻找神明的线索。\n
+\n
+……\n
+噢，小意外，飞船失事了。\n
+……我们重整旗鼓，离开这里吧。\n</description>
+    <scenario>
+      <summary>是应该永远记得的东西。</summary>
+      <playerFaction>
+        <def>PlayerFaction</def>
+        <factionDef>PlayerColony_DeerFox</factionDef>
+      </playerFaction>
+      <parts>
+        <!--== 人数 ==-->
+        <li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+          <def>ConfigPage_ConfigureStartingPawns</def>
+          <pawnCount>4</pawnCount>
+          <pawnChoiceCount>8</pawnChoiceCount>
+        </li>
+        <!--== 到达方法 ==-->
+        <li Class="ScenPart_PlayerPawnsArriveMethod">
+          <def>PlayerPawnsArriveMethod</def>
+          <method>DropPods</method>
+          <visible>false</visible>
+        </li>
+        <!--== 人物年龄范围 ==-->
+        <!--<li Class="ScenPart_PawnFilter_Age">
+          <def>PawnFilter_Age</def>
+          <allowedAgeRange>15~18</allowedAgeRange>
+          <visible>false</visible>
+        </li>-->
+        <!--== 开场信息 ==-->
+        <li Class="ScenPart_GameStartDialog">
+          <def>GameStartDialog</def>
+          <text>这是个意外\n
+我们意外降落到了这里……我想我们需要离开这里，去寻找我们的神明。\n
+但……我们暂时无法离开了，得先在这里生存下来，我们现在拥有的不多。不过，我们还拥有可以信任的彼此，这再好不过了。\n
+嗯……这里有许多不能相信的智慧生物，这太糟糕了，我真想快些离开。\n
+…\n
+或许，这些家伙是可以被利用的。</text>
+        </li>
+        <li Class="ScenPart_PawnFilter_Age">
+          <def>PawnFilter_Age</def>
+          <allowedAgeRange>15~22</allowedAgeRange>
+          <visible>false</visible>
+        </li>
+      </parts>
+    </scenario>
+  </ScenarioDef>
+</Defs>
