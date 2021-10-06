@@ -9,7 +9,7 @@
       <li>IndustrialBasic</li>
     </apparelTags>
     <apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
-    <race>DeerFox</race>
+    <race>Alien_DeerFox</race>
     <combatPower>30</combatPower>
     <isFighter>false</isFighter>
     <apparelMoney>350~600</apparelMoney>

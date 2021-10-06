@@ -3,18 +3,21 @@
   <BodyPartDef>
     <defName>Horn_DeerFox</defName>
     <label>鹿角</label>
-    <hitPoints>100</hitPoints>
+    <hitPoints>20</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>false</skinCovered>
     <solid>true</solid>
+    <alive>false</alive>
     <bleedRate>0</bleedRate>
   </BodyPartDef>
+
   <BodyPartDef>
     <defName>Tail_DeerFox</defName>
-    <label>尾巴</label>
-    <hitPoints>30</hitPoints>
+    <label>尾</label>
+    <hitPoints>5</hitPoints>
     <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
     <skinCovered>true</skinCovered>
     <bleedRate>0.2</bleedRate>
   </BodyPartDef>
+
 </Defs>

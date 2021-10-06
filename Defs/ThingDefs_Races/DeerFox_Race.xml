@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
-    <defName>DeerFox</defName>
+    <defName>Alien_DeerFox</defName>
     <label>deerfox</label>
     <description>他们始于某个十分遥远偏僻的星球，知道他们的生物并不多，疑似鹿和狐狸基因混合的生物，但具体的没人知道那是什么。</description>
     <statBases>
@@ -157,7 +157,7 @@
         <maleGenderProbability>0.4</maleGenderProbability>
         <immuneToAge>false</immuneToAge>
         <canLayDown>true</canLayDown>
-        <forcedRaceTraitEntries>
+        <!--<forcedRaceTraitEntries>
           <li>
             <defName>Bisexual</defName>
             <chance>77</chance>
@@ -210,7 +210,7 @@
             <defName>Bloodlust</defName>
             <chance>55</chance>
           </li>
-        </forcedRaceTraitEntries>
+        </forcedRaceTraitEntries>-->
         <disallowedTraits>
           <li>
             <defName>DislikesWomen</defName>
