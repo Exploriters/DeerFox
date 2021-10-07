@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <AlienRace.BackstoryDef>
+    <defName>DeerFox_Backstory</defName>
+    <title>鹿狐</title>
+    <titleShort>鹿狐</titleShort>
+    <baseDescription>鹿狐</baseDescription>
+    <slot>Childhood</slot>
+    <spawnCategories>
+      <li>DeerFoxBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+  <AlienRace.BackstoryDef>
+    <defName>DeerFox_Backstory_Adult</defName>
+    <title>鹿狐</title>
+    <titleShort>鹿狐</titleShort>
+    <baseDescription>鹿狐</baseDescription>
+    <slot>Adulthood</slot>
+    <spawnCategories>
+      <li>DeerFoxBackstory</li>
+    </spawnCategories>
+  </AlienRace.BackstoryDef>
+</Defs>

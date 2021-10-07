@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <FactionDef ParentName="PlayerFactionBase">
     <defName>PlayerColony_DeerFox</defName>
@@ -12,7 +12,7 @@
     <backstoryFilters>
       <li>
         <categories>
-          <li>Offworld</li>
+          <li>DeerFoxBackstory</li>
         </categories>
       </li>
     </backstoryFilters>
