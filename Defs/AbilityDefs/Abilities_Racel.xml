@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>  <AbilityDef ParentName="PsycastBase">
+    <defName>SleepMist</defName>
+    <abilityClass>Ability</abilityClass>
+    <category>ExploriteRacal</category>
+    <label>冬眠脉冲</label>
+    <description>向目标区域投射令人昏睡的低温雾气，能够令其中的生物迅速失去精力并陷入昏厥状态。</description>
+    <level>0</level>
+    <writeCombatLog>True</writeCombatLog>
+    <iconPath>UI/Abilities/MassPsychicDeafCentaur</iconPath>
+    <hotKey>Misc12</hotKey>
+    <jobDef>CastAbilityOnThing</jobDef>
+    <targetRequired>True</targetRequired>
+    <canUseAoeToGetTargets>True</canUseAoeToGetTargets>
+    <showPsycastEffects>True</showPsycastEffects>
+    <showCastingProgressBar>True</showCastingProgressBar>
+    <warmupMote>Mote_WarmupNeuroquake</warmupMote>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
+    <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
+    <gizmoClass>Command_Ability</gizmoClass>
+	
+    <sendLetterOnCooldownComplete>True</sendLetterOnCooldownComplete>
+    <cooldownTicksRange>1200~1200</cooldownTicksRange>
+    <statBases>
+      <Ability_EntropyGain>0</Ability_EntropyGain>
+      <Ability_PsyfocusCost>0</Ability_PsyfocusCost>
+      <Ability_Duration>0</Ability_Duration>
+      <Ability_EffectRadius>3.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <warmupTime>1</warmupTime>
+      <range>39.9</range>
+      <drawAimPie>True</drawAimPie>
+      <requireLineOfSight>False</requireLineOfSight>
+      <targetParams Inherit="False">
+        <canTargetSelf>True</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="Explorite.CompProperties_Ability_NeedImpact">
+        <compClass>Explorite.CompAbilityEffect_NeedImpact</compClass>
+        <needDef>Rest</needDef>
+        <needFactor>0</needFactor>
+        <psychic>True</psychic>
+        <goodwillImpact>-15</goodwillImpact>
+        <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDef>PsycastPsychicEffect</fleckDef>
+        <sound>PsycastPsychicPulse</sound>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>

@@ -12,6 +12,14 @@
       <LeatherAmount>60</LeatherAmount>
       <RoyalFavorValue>3</RoyalFavorValue>
     </statBases>
+    <comps>
+      <li Class="Explorite.CompProperties_PawnShield" />
+      <li Class="Explorite.CompProperties_EnsureAbility" MayRequire="Ludeon.RimWorld.Royalty">
+        <abilities>
+          <li MayRequire="Ludeon.RimWorld.Royalty">SleepMist</li>
+        </abilities>
+      </li>
+    </comps>
     <tools>
       <li>
         <label>鹿角</label>
