@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <AlienRace.ThingDef_AlienRace ParentName="BasePawn">
     <defName>Alien_DeerFox</defName>
@@ -79,7 +79,7 @@
       <lifeExpectancy>80</lifeExpectancy>
       <leatherDef>Leather_Human</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
-      <body>Human</body>
+      <body>body_DeerFox</body>
       <baseBodySize>1</baseBodySize>
       <baseHealthScale>1</baseHealthScale>
       <foodType>OmnivoreHuman</foodType>
@@ -332,6 +332,143 @@
               </first>
             </li>
           </colorChannels>
+          <bodyAddons>
+            <li>
+              <path>Thing/Pawn/DeerFox/Tail/DeerFox_Tail</path>
+              <bodyPart>尾巴</bodyPart>
+              <inFrontOfBody>false</inFrontOfBody>
+              <drawnInBed>false</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <bodyTypes>
+                    <Thin>(0,0)</Thin>
+                  </bodyTypes>
+                </south>
+                <north>
+                  <bodyTypes>
+                    <Thin>(0,0.4)</Thin>
+                  </bodyTypes>
+                </north>
+                <east>
+                  <bodyTypes>
+                    <Thin>(-0.2,0.15)</Thin>
+                  </bodyTypes>
+                </east>
+              </offsets>
+              <defaultOffset>Tail</defaultOffset>
+            </li>
+            <li>
+              <path>Thing/Pawn/DeerFox/Ears/DeerFox_LEar</path>
+              <bodyPart>左耳</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.2)</DeerFox_Head>
+                  </crownTypes>
+                  <layerOffset>-0.7</layerOffset>
+                </south>
+                <north>
+                  <crownTypes>
+                    <DeerFox_Head>(0,0)</DeerFox_Head>
+                  </crownTypes>
+                </north>
+                <east>
+                  <crownTypes>
+                    <DeerFox_Head>(-0.01,-0.19)</DeerFox_Head>
+                  </crownTypes>
+                </east>
+                <layerOffset>-0.3</layerOffset>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+            <li>
+              <path>Thing/Pawn/DeerFox/Ears/DeerFox_REar</path>
+              <bodyPart>右耳</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.2)</DeerFox_Head>
+                  </crownTypes>
+                  <layerOffset>-0.7</layerOffset>
+                </south>
+                <north>
+                  <crownTypes>
+                    <DeerFox_Head>(0,0)</DeerFox_Head>
+                  </crownTypes>
+                  <layerOffset>-0.3</layerOffset>
+                </north>
+                <east>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.17)</DeerFox_Head>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+            <li>
+              <path>Thing/Pawn/DeerFox/Horns/DeerFox_LHorn</path>
+              <bodyPart>左角</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.17)</DeerFox_Head>
+                  </crownTypes>
+                </south>
+                <north>
+                  <crownTypes>
+                    <DeerFox_Head>(0,0)</DeerFox_Head>
+                  </crownTypes>
+                  <layerOffset>0.01</layerOffset>
+                </north>
+                <east>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.11)</DeerFox_Head>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+            <li>
+              <path>Thing/Pawn/DeerFox/Horns/DeerFox_RHorn</path>
+              <bodyPart>右角</bodyPart>
+              <inFrontOfBody>true</inFrontOfBody>
+              <drawnInBed>true</drawnInBed>
+              <!--<drawnDesiccated>false</drawnDesiccated>-->
+              <colorChannel>skin</colorChannel>
+              <offsets>
+                <south>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.17)</DeerFox_Head>
+                  </crownTypes>
+                </south>
+                <north>
+                  <crownTypes>
+                    <DeerFox_Head>(0,0)</DeerFox_Head>
+                  </crownTypes>
+                </north>
+                <east>
+                  <crownTypes>
+                    <DeerFox_Head>(0,-0.11)</DeerFox_Head>
+                  </crownTypes>
+                </east>
+              </offsets>
+              <defaultOffset>Head</defaultOffset>
+            </li>
+          </bodyAddons>
         </alienPartGenerator>
       </generalSettings>
       <graphicPaths>
