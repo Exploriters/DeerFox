@@ -414,8 +414,8 @@
                   <crownTypes>
                     <DeerFox_Head>(-0.01,-0.19)</DeerFox_Head>
                   </crownTypes>
+                  <layerOffset>-0.3</layerOffset>
                 </east>
-                <layerOffset>-0.3</layerOffset>
               </offsets>
               <defaultOffset>Head</defaultOffset>
             </li>
