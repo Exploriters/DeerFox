@@ -14,7 +14,24 @@
     </statBases>
     <tools>
       <li>
-        <label>left paw</label>
+        <label>鹿角</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>12</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>DeerFox_HornGroup</linkedBodyPartsGroup>
+        <surpriseAttack>
+          <extraMeleeDamages>
+            <li>
+              <def>Stun</def>
+              <amount>14</amount>
+            </li>
+          </extraMeleeDamages>
+        </surpriseAttack>
+      </li>
+      <li>
+        <label>左爪</label>
         <capacities>
           <li>Cut</li>
         </capacities>
@@ -31,7 +48,7 @@
         </surpriseAttack>
       </li>
       <li>
-        <label>right paw</label>
+        <label>右爪</label>
         <capacities>
           <li>Cut</li>
         </capacities>
@@ -48,7 +65,7 @@
         </surpriseAttack>
       </li>
       <li>
-        <label>teeth</label>
+        <label>獠牙</label>
         <capacities>
           <li>Bite</li>
         </capacities>
@@ -60,7 +77,7 @@
         <soundMeleeMiss>Pawn_Melee_HumanBite_Miss</soundMeleeMiss>
       </li>
       <li>
-        <label>head</label>
+        <label>头</label>
         <capacities>
           <li>Blunt</li>
         </capacities>
@@ -77,7 +94,7 @@
       <intelligence>Humanlike</intelligence>
       <makesFootprints>true</makesFootprints>
       <lifeExpectancy>80</lifeExpectancy>
-      <leatherDef>Leather_Human</leatherDef>
+      <leatherDef>Leather_Fox</leatherDef>
       <nameCategory>HumanStandard</nameCategory>
       <body>body_DeerFox</body>
       <baseBodySize>1</baseBodySize>
@@ -335,7 +352,7 @@
           <bodyAddons>
             <li>
               <path>Thing/Pawn/DeerFox/Tail/DeerFox_Tail</path>
-              <bodyPart>尾巴</bodyPart>
+              <bodyPart>Tail_DeerFox</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
               <drawnInBed>false</drawnInBed>
               <!--<drawnDesiccated>false</drawnDesiccated>-->
