@@ -3,7 +3,7 @@
   <PawnKindDef ParentName="BasePlayerPawnKind">
     <defName>Colonist_DeerFox</defName>
     <label>鹿狐</label>
-    <defaultFactionType>PlayerColony</defaultFactionType>
+    <defaultFactionType>PlayerColony_DeerFox</defaultFactionType>
     <chemicalAddictionChance>0.06</chemicalAddictionChance>
     <apparelTags>
       <li>IndustrialBasic</li>

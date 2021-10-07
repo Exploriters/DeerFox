@@ -285,7 +285,7 @@
         </disallowedTraits>
         <traitCount>2~3</traitCount>
         <additionalTraits>0~1</additionalTraits>
-        <maxDamageForSocialfight>6.7</maxDamageForSocialfight>
+        <maxDamageForSocialfight>7</maxDamageForSocialfight>
         <allowHumanBios>true</allowHumanBios>
         <immuneToXenophobia>false</immuneToXenophobia>
         <minAgeForAdulthood>26</minAgeForAdulthood>

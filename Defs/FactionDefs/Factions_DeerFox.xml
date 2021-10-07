@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <FactionDef ParentName="FactionBase" Abstract="True" Name="PlayerFactionBase">
-    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
-    <colorSpectrum>
-      <li>(0, 0.737, 0.847)</li>
-    </colorSpectrum>
-  </FactionDef>
   <FactionDef ParentName="PlayerFactionBase">
     <defName>PlayerColony_DeerFox</defName>
     <label>鹿神狐疑</label>
