@@ -348,6 +348,21 @@
                 </options>
               </first>
             </li>
+            <li>
+              <name>horn</name>
+              <first Class="ColorGenerator_Options">
+                <options>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.851,0.949,0.933,1)</only>
+                  </li>
+                  <li>
+                    <weight>5</weight>
+                    <only>RGBA(0.949,0.991,0.851,1)</only>
+                  </li>
+                </options>
+              </first>
+            </li>
           </colorChannels>
           <bodyAddons>
             <li>
@@ -438,7 +453,7 @@
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
               <!--<drawnDesiccated>false</drawnDesiccated>-->
-              <colorChannel>skin</colorChannel>
+              <colorChannel>horn</colorChannel>
               <offsets>
                 <south>
                   <crownTypes>
@@ -465,7 +480,7 @@
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
               <!--<drawnDesiccated>false</drawnDesiccated>-->
-              <colorChannel>skin</colorChannel>
+              <colorChannel>horn</colorChannel>
               <offsets>
                 <south>
                   <crownTypes>
