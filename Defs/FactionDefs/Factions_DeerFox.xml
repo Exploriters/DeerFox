@@ -7,7 +7,7 @@
     <isPlayer>true</isPlayer>
     <basicMemberKind>Colonist_DeerFox</basicMemberKind>
     <pawnSingular>鹿狐</pawnSingular>
-    <pawnsPlural>鹿狐们</pawnsPlural>
+    <pawnsPlural>鹿狐</pawnsPlural>
     <techLevel>Industrial</techLevel>
     <backstoryFilters>
       <li>
