@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <IdeoIconDef>
+    <defName>IdeoIconDeerFox</defName>
+    <iconPath>UI/Ideoligions/Tentaler</iconPath>
+    <cultures>
+      <li>Cultures_DeerFox</li>
+    </cultures>
+    <memes>
+      <li>Structure_DeerFox</li>
+    </memes>
+  </IdeoIconDef>
+
+  <ColorDef>
+    <defName>DeerFox</defName>
+    <color>RGBA(0.518, 1.000, 0.769, 1.000)</color>
+    <memes>
+      <li>Structure_DeerFox</li>
+    </memes>
+  </ColorDef>
+  
+</Defs>

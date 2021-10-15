@@ -21,8 +21,8 @@
     </backstoryFilters>
     <factionIconPath>World/WorldObjects/Expanding/DeerFoxMember</factionIconPath>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
-    <factionNameMaker>NamerFactionOutlander</factionNameMaker>
-    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <factionNameMaker>NamerFactionDeerFox</factionNameMaker>
+    <settlementNameMaker>NamerSettlementDeerFox</settlementNameMaker>
     <geneticVariance>1</geneticVariance>
     <startingResearchTags>
       <li>ClassicStart</li>
@@ -39,5 +39,36 @@
     <allowedCultures>
       <li>Cultures_DeerFox</li>
     </allowedCultures>
+    <structureMemeWeights>
+      <Structure_DeerFox MayRequire="Ludeon.RimWorld.Ideology">1</Structure_DeerFox>
+    </structureMemeWeights>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+    </requiredMemes>
+    <allowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
+	  <!-- Supremacy -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+	  
+	  <!-- Individualism -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+	  
+	  <!-- Primacy -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">NaturePrimacy</li>
+	  
+	  <!-- Misc -->
+      <li MayRequire="Ludeon.RimWorld.Ideology">Transhumanist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">PainIsVirtue</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Proselytizer</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">HighLife</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Darkness</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Tunneler</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+    </allowedMemes>
   </FactionDef>
 </Defs>

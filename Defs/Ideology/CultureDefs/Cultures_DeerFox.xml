@@ -4,12 +4,15 @@
     <defName>Cultures_DeerFox</defName>
     <label>鹿狐的文化</label>
     <description>描述XD</description>
+    <pawnNameMaker>NamerPersonDeerFox</pawnNameMaker>
+    <ideoNameMaker>NamerIdeoDeerFox</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
     <deityTypeMaker MayRequire="Ludeon.RimWorld.Ideology">DeityTypeMakerAstropolitan</deityTypeMaker>
     <leaderTitleMaker MayRequire="Ludeon.RimWorld.Ideology">LeaderTitleMaker_Astropolitan</leaderTitleMaker>
     <festivalNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerFestivalAstropolitan</festivalNameMaker>
     <allowedPlaceTags>
       <li>OriginSpacer</li>
+      <li>ExExclusive</li>
     </allowedPlaceTags>
     <iconPath>UI/Cultures/Astropolitan</iconPath>
     <iconColor>(255, 255, 255)</iconColor>
@@ -30,6 +33,18 @@
         <weightFactor>1</weightFactor>
       </li>
     </styleItemTags>
-    <ideoNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerIdeoAstropolitan</ideoNameMaker>
   </CultureDef>
+
+  <RulePackDef>
+    <defName>NamerIdeoDeerFox</defName>
+    <include />
+    <rulePack>
+      <rulesStrings>
+        <li>r_ideoName->鹿狐</li>
+        <li>r_ideoAdjective->鹿狐</li>
+        <li>r_memberName->鹿狐</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
 </Defs>

@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <MemeDef>
+  <Explorite.MemeDef_Ex Name="DeerFoxMemeBase" Abstract="True">
+    <randomizationSelectionWeightFactor>0</randomizationSelectionWeightFactor>
+    <veneratedAnimalsCountOffset>-10</veneratedAnimalsCountOffset>
+    <veneratedAnimalsCountOverride>0</veneratedAnimalsCountOverride>
+    <thingStyleCategories>
+      <li>
+        <category>Animalist</category>
+        <priority>40</priority>
+      </li>
+    </thingStyleCategories>
+    <exclusiveTo>
+      <li>PlayerColony_DeerFox</li>
+    </exclusiveTo>
+    <lockAccuIdeoColor>true</lockAccuIdeoColor>
+    <overrdieIcon>true</overrdieIcon>
+  </Explorite.MemeDef_Ex>
+
+  <Explorite.MemeDef_Ex ParentName="DeerFoxMemeBase">
     <defName>Structure_DeerFox</defName>
     <label>狐疑之说</label>
     <description>“不要相信除了我们以外的人…”</description>
@@ -26,7 +43,7 @@
     <descriptionMaker>
       <patterns>
         <li>
-          <def>AnimistDescription</def>
+          <def>DeerFoxDescription</def>
         </li>
       </patterns>
       <constants>
@@ -54,5 +71,18 @@
         <priority>1</priority>
       </li>
     </thingStyleCategories>
-  </MemeDef>
+  </Explorite.MemeDef_Ex>
+
+  <IdeoStoryPatternDef>
+    <defName>DeerFoxDescription</defName>
+    <segments>
+      <li>main</li>
+    </segments>
+    <rules>
+      <include />
+      <rulesStrings>
+        <li>main-&gt;TODO</li>
+      </rulesStrings>
+    </rules>
+  </IdeoStoryPatternDef>
 </Defs>
