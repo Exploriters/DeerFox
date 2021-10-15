@@ -2,7 +2,7 @@
 <Defs>
   <IdeoIconDef>
     <defName>IdeoIconDeerFox</defName>
-    <iconPath>UI/Ideoligions/Tentaler</iconPath>
+    <iconPath>UI/Ideoligions/DeerFox</iconPath>
     <cultures>
       <li>Cultures_DeerFox</li>
     </cultures>
