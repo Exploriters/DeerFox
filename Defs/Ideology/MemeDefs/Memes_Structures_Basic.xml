@@ -24,7 +24,7 @@
     <category>Structure</category>
     <iconPath>UI/Structures/Animist</iconPath>
     <impact>0</impact>
-    <worshipRoomLabel>temple</worshipRoomLabel>
+    <worshipRoomLabel>礼堂</worshipRoomLabel>
     <randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>
     <deityCount>0</deityCount>
     <generalRules>
