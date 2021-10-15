@@ -9,6 +9,9 @@
     <pawnSingular>鹿狐</pawnSingular>
     <pawnsPlural>鹿狐</pawnsPlural>
     <techLevel>Industrial</techLevel>
+    <colorSpectrum Inherit="False">
+      <li>(0.949,0.991,0.851)</li>
+    </colorSpectrum>
     <backstoryFilters>
       <li>
         <categories>
@@ -16,7 +19,7 @@
         </categories>
       </li>
     </backstoryFilters>
-    <factionIconPath>World/WorldObjects/Expanding/Town</factionIconPath>
+    <factionIconPath>World/WorldObjects/Expanding/DeerFoxMember</factionIconPath>
     <playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
     <factionNameMaker>NamerFactionOutlander</factionNameMaker>
     <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>

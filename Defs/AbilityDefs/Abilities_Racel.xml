@@ -7,7 +7,7 @@
     <description>向目标区域投射令人昏睡的低温雾气，能够令其中的生物迅速失去精力并陷入昏厥状态。</description>
     <level>0</level>
     <writeCombatLog>True</writeCombatLog>
-    <iconPath>UI/Abilities/MassPsychicDeafCentaur</iconPath>
+    <iconPath>UI/Abilities/SleepMist</iconPath>
     <hotKey>Misc12</hotKey>
     <jobDef>CastAbilityOnThing</jobDef>
     <targetRequired>True</targetRequired>

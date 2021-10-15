@@ -11,6 +11,17 @@
       <ComfyTemperatureMax>20</ComfyTemperatureMax>
       <LeatherAmount>60</LeatherAmount>
       <RoyalFavorValue>3</RoyalFavorValue>
+	  <!--== Stats ==-->
+	  <PlantWorkSpeed>1.2</PlantWorkSpeed>
+	  <HuntingStealth>1.5</HuntingStealth>
+	  <AnimalGatherYield>1.1</AnimalGatherYield>
+	  <AnimalGatherSpeed>1.2</AnimalGatherSpeed>
+	  <ResearchSpeed>1.3</ResearchSpeed>
+	  <PlantHarvestYield>1.1</PlantHarvestYield>
+	  <NegotiationAbility>1.4</NegotiationAbility>
+	  <PawnBeauty>2</PawnBeauty>
+	  <TradePriceImprovement>1.2</TradePriceImprovement>
+	  <TameAnimalChance>1.2</TameAnimalChance>
     </statBases>
     <comps>
       <li Class="Explorite.CompProperties_PawnShield" />
@@ -355,6 +366,15 @@
                   </li>
                 </options>
               </first>
+			  <second Class="ColorGenerator_Options">
+				<!-- 耳朵内部 -->
+				<options>
+					<li>
+						<weight>0.5</weight>
+						<only>RGBA(1,0.886,0.886)</only>
+					</li>
+				</options>
+			  </second>
             </li>
             <li>
               <name>horn</name>
@@ -516,6 +536,25 @@
           <head>Thing/Pawn/DeerFox/Head/</head>
         </li>
       </graphicPaths>
+	  <thoughtSettings>
+		<cannotReceiveThoughts>
+          <li>AteRawFood</li>
+          <li>AteHumanlikeMeatDirect</li>
+          <li>AteHumanlikeMeatDirectCannibal</li>
+          <li>AteHumanlikeMeatAsIngredient</li>
+          <li>AteHumanlikeMeatAsIngredientCannibal</li>
+          <li>ApparelDamaged</li>
+          <li>WrongApparelGender</li>
+          <li>DeadMansApparel</li>
+          <li>HumanLeatherApparelSad</li>
+          <li>AteWithoutTable</li>
+          <li>ReleasedHealthyPrisoner</li>
+          <li>ButcheredHumanlikeCorpse</li>
+          <li>KnowButcheredHumanlikeCorpse</li>
+          <li>ButcheredHumanlikeCorpseOpinion</li>
+          <li>AteRawHumanlikeMeat</li>
+		</cannotReceiveThoughts>
+	  </thoughtSettings>
       <styleSettings>
         <li>
           <key>HairDef</key>
