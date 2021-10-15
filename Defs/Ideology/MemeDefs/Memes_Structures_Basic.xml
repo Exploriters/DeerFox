@@ -18,6 +18,39 @@
   </Explorite.MemeDef_Ex>
 
   <Explorite.MemeDef_Ex ParentName="DeerFoxMemeBase">
+    <defName>DeerFoxMeme</defName>
+    <label>鹿狐</label>
+    <description>鹿狐！</description>
+    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
+    <groupDef>MemeGroup_Sayers</groupDef>
+    <impact>3</impact>
+    <renderOrder>80</renderOrder>
+    <requireOne>
+	  <li>
+	    <li>Slavery_DontMind_DeerFox</li>
+	  </li>
+	  <li>
+	    <li>Cannibalism_Acceptable_DeerFox</li>
+	  </li>
+	  <li>
+	    <li>OrganUse_Acceptable_DeerFox</li>
+	  </li>
+	  <li>
+	    <li>IdeoDiversity_Disapproved_DeerFox</li>
+	  </li>
+	  <li>
+	    <li>Research_Fast</li>
+	  </li>
+      <li>
+        <li>Nudity_Male_NoRules</li>
+      </li>
+      <li>
+        <li>Nudity_Female_NoRules</li>
+      </li>
+    </requireOne>
+  </Explorite.MemeDef_Ex>
+
+  <Explorite.MemeDef_Ex ParentName="DeerFoxMemeBase">
     <defName>Structure_DeerFox</defName>
     <label>狐疑之说</label>
     <description>“不要相信除了我们以外的人…”</description>
