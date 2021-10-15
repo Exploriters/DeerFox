@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>  <AbilityDef ParentName="PsycastBase">
     <defName>SleepMist</defName>
-    <abilityClass>Ability</abilityClass>
+    <abilityClass>Explorite.AbilityWithPsycastEffect</abilityClass>
     <category>ExploriteRacal</category>
     <label>冬眠脉冲</label>
-    <description>向目标区域投射令人昏睡的低温雾气，能够令其中的生物迅速失去精力并陷入昏厥状态。</description>
+    <description>向目标区域投射令人昏睡的低温雾气，能够使其中的生物迅速失去精力并陷入昏厥状态。</description>
     <level>0</level>
     <writeCombatLog>True</writeCombatLog>
     <iconPath>UI/Abilities/SleepMist</iconPath>
@@ -19,8 +19,8 @@
     <displayGizmoWhileUndrafted>False</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>True</disableGizmoWhileUndrafted>
     <gizmoClass>Command_Ability</gizmoClass>
-	
-    <sendLetterOnCooldownComplete>True</sendLetterOnCooldownComplete>
+	  
+    <sendLetterOnCooldownComplete>False</sendLetterOnCooldownComplete>
     <cooldownTicksRange>1200~1200</cooldownTicksRange>
     <statBases>
       <Ability_EntropyGain>0</Ability_EntropyGain>
@@ -38,6 +38,7 @@
         <canTargetSelf>True</canTargetSelf>
         <canTargetAnimals>True</canTargetAnimals>
         <canTargetLocations>True</canTargetLocations>
+        <canTargetBuildings>True</canTargetBuildings>
       </targetParams>
     </verbProperties>
     <comps>
@@ -49,10 +50,13 @@
         <goodwillImpact>-15</goodwillImpact>
         <applyGoodwillImpactToLodgers>False</applyGoodwillImpactToLodgers>
       </li>
-      <li Class="CompProperties_AbilityFleckOnTarget">
+      <li Class="CompProperties_AbilityEffect">
+        <compClass>Explorite.CompAbilityEffect_JobInterrupt</compClass>
+      </li>
+      <!--<li Class="CompProperties_AbilityFleckOnTarget">
         <fleckDef>PsycastPsychicEffect</fleckDef>
         <sound>PsycastPsychicPulse</sound>
-      </li>
+      </li>-->
     </comps>
   </AbilityDef>
 </Defs>
