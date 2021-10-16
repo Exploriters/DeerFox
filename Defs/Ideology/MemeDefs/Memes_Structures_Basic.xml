@@ -21,7 +21,7 @@
     <defName>DeerFoxMeme</defName>
     <label>鹿狐</label>
     <description>鹿狐！</description>
-    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
+    <iconPath>UI/Cultures/DeerFox</iconPath>
     <groupDef>MemeGroup_Sayers</groupDef>
     <impact>3</impact>
     <renderOrder>80</renderOrder>
@@ -56,22 +56,27 @@
     <label>狐疑之说</label>
     <description>“不要相信除了我们以外的人…”</description>
     <category>Structure</category>
-    <iconPath>UI/Structures/Animist</iconPath>
+    <iconPath>UI/Cultures/DeerFox</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>礼堂</worshipRoomLabel>
     <randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>
-    <deityCount>0</deityCount>
+    <deityCount>1</deityCount>
+    <fixedDeityNameTypes>
+      <li>
+        <name>狐疑之神</name>
+        <type>创物神</type>
+      </li>
+    </fixedDeityNameTypes>
+    <deityGenderForced>None</deityGenderForced>
+    <allowSymbolsFromDeity>false</allowSymbolsFromDeity>
     <generalRules>
       <rulesStrings>
-        <li>memeLeaderNoun-&gt;curate</li>
-        <li>memeLeaderNoun-&gt;speaker</li>
-        <li>memeLeaderAdjective-&gt;universe</li>
-        <li>memeLeaderAdjective-&gt;spirit</li>
-        <li>memeLeaderAdjective-&gt;anima</li>
-        <li>memeHyphenPrefix-&gt;ani</li>
-        <li>memeMoralist-&gt;shaman</li>
-        <li>memeMoralist-&gt;priest</li>
-        <li>memeMoralist-&gt;elder</li>
+        <li>memeAdjective-&gt;鹿狐</li>
+        <li>memeCreed-&gt;鹿狐</li>
+        <li>memeConcept-&gt;鹿狐</li>
+        <li>memeLeaderNoun-&gt;领袖</li>
+        <li>memeLeaderAdjective-&gt;鹿狐</li>
+        <li>memeMoralist-&gt;传道者</li>
       </rulesStrings>
     </generalRules>
     <descriptionMaker>
@@ -115,7 +120,7 @@
     <rules>
       <include />
       <rulesStrings>
-        <li>main-&gt;TODO</li>
+        <li>main-&gt;TODO鹿狐的文化。</li>
       </rulesStrings>
     </rules>
   </IdeoStoryPatternDef>

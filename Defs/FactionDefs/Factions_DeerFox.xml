@@ -44,13 +44,11 @@
     </structureMemeWeights>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
-      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DeerFoxMeme</li>
     </requiredMemes>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
-	  <!-- Supremacy -->
-      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
-	  
+      <li MayRequire="Ludeon.RimWorld.Ideology">DeerFoxMeme</li>
 	  <!-- Individualism -->
       <li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>

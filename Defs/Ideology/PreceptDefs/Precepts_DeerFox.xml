@@ -301,4 +301,15 @@
       </li>
     </stages>
   </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef ParentName="IdeoLeaderResentmentBase">
+    <defName>IdeoLeaderResentmentDisapproved_DeerFox</defName>
+    <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
+    <stages>
+      <li>
+        <description>被{0}领导着指挥是一种侮辱。(TODO)</description>
+        <baseMoodEffect>-3</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
 </Defs>
