@@ -307,8 +307,8 @@
     <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
     <stages>
       <li>
-        <description>被{0}领导着指挥是一种侮辱。(TODO)</description>
-        <baseMoodEffect>-3</baseMoodEffect>
+        <description>被那个叫{0}的蜗牛脑子生物命令真是耻辱！</description>
+        <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
