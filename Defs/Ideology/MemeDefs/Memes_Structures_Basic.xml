@@ -21,7 +21,7 @@
     <defName>DeerFoxMeme</defName>
     <label>鹿狐</label>
     <description>鹿狐！</description>
-    <iconPath>UI/Memes/AnimalPersonhood</iconPath>
+    <iconPath>UI/Cultures/DeerFox</iconPath>
     <groupDef>MemeGroup_Sayers</groupDef>
     <impact>3</impact>
     <renderOrder>80</renderOrder>
@@ -55,7 +55,7 @@
     <label>狐疑之说</label>
     <description>“不要相信除了我们以外的人…”</description>
     <category>Structure</category>
-    <iconPath>UI/Structures/Animist</iconPath>
+    <iconPath>UI/Cultures/DeerFox</iconPath>
     <impact>0</impact>
     <worshipRoomLabel>礼堂</worshipRoomLabel>
     <randomizationSelectionWeightFactor>2</randomizationSelectionWeightFactor>

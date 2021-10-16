@@ -44,10 +44,12 @@
     </structureMemeWeights>
     <requiredMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DeerFoxMeme</li>
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
     </requiredMemes>
     <allowedMemes>
       <li MayRequire="Ludeon.RimWorld.Ideology">Structure_DeerFox</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">DeerFoxMeme</li>
 	  <!-- Supremacy -->
       <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
 	  
