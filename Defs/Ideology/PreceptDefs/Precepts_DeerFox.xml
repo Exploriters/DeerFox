@@ -1,11 +1,11 @@
-
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!--==Slavery==-->
   <PreceptDef>
     <defName>Slavery_DontMind_DeerFox</defName>
     <issue>Slavery</issue>
-    <label>TODO(漠视)</label>
-    <description>TODO</description>
+    <label>漠视</label>
+    <description>无所谓，这种东西是可有可无的</description>
     <impact>Low</impact>
     <displayOrderInIssue>10</displayOrderInIssue>
     <defaultSelectionWeight>1</defaultSelectionWeight>
@@ -16,12 +16,169 @@
       <li>DeerFoxMeme</li>
     </requiredMemes>
   </PreceptDef>
+  <!--hm-->
+  <PreceptDef>
+    <defName>Slavery_Honorable_DeerFox</defName>
+    <issue>Slavery</issue>
+    <label>推崇</label>
+    <description>它并不是什么糟糕的制度，对我们来说，这是非常有必要的，我们需要听话的工具</description>
+    <impact>High</impact>
+    <displayOrderInIssue>0</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>DeerFoxMeme</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>DeerFoxMeme</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SituationalThought">
+        <thought>Slavery_Honorable_SlavesInColony_DeerFox</thought>
+        <description>殖民地中的每个奴隶</description>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>SoldSlave</eventDef>
+        <thought>SoldSlave_Honorable_DeerFox</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>EnslavedPrisonerNotPreviouslyEnslaved</eventDef>
+        <thought>EnslavedPrisoner_Honorable_DeerFox</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SoldSlave</eventDef>
+        <thought>SoldSlave_Know_Honorable_DeerFox</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>EnslavedPrisonerNotPreviouslyEnslaved</eventDef>
+        <thought>EnslavedPrisoner_Know_Honorable_DeerFox</thought>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>SoldSlave</eventDef>
+        <thought>SoldSlave_Know_Honorable_Mood_DeerFox</thought>
+        <description>有人出售奴隶</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>EnslavedPrisonerNotPreviouslyEnslaved</eventDef>
+        <thought>EnslavedPrisoner_Know_Honorable_Mood_DeerFox</thought>
+        <description>有人奴役了囚犯</description>
+        <onlyForNonSlaves>true</onlyForNonSlaves>
+      </li>
+      <li Class="PreceptComp_DevelopmentPoints">
+        <eventDef>EnslavedPrisonerNotPreviouslyEnslaved</eventDef>
+        <eventLabel>奴役了囚犯</eventLabel>
+        <points>1</points>
+      </li>
+    </comps>
+    <approvesOfSlavery>true</approvesOfSlavery>
+  </PreceptDef>
+  <!-- ThoughtHonorable -->
+  <ThoughtDef>
+    <defName>Slavery_Honorable_SlavesInColony_DeerFox</defName>
+    <thoughtClass>Thought_Situational_Precept_SlavesInColony</thoughtClass>
+    <workerClass>ThoughtWorker_Precept_SlavesInColony</workerClass>
+    <stages>
+      <li>
+        <label>殖民地有奴隶</label>
+        <description>支配奴隶是非常棒的感觉</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>SoldSlave_Honorable_DeerFox</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>贩卖奴隶</label>
+        <description>我的狐疑之神，我为什么要把我的奴隶卖给别人！</description>
+        <baseMoodEffect>-15</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>EnslavedPrisoner_Honorable_DeerFox</defName>
+    <durationDays>6</durationDays>
+    <stackLimit>1</stackLimit>
+    <stages>
+      <li>
+        <label>奴役囚犯</label>
+        <description>我有了一个会说话的工具！</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>SoldSlave_Know_Honorable_DeerFox</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>25</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>贩卖奴隶</label>
+        <baseOpinionOffset>-10</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>SoldSlave_Know_Honorable_Mood_DeerFox</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>贩卖奴隶</label>
+        <description>我们拥有的奴隶只能是我们的</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>EnslavedPrisoner_Know_Honorable_DeerFox</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>15</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>奴役囚犯</label>
+        <baseOpinionOffset>8</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>EnslavedPrisoner_Know_Honorable_Mood_DeerFox</defName>
+    <thoughtClass>Thought_Memory</thoughtClass>
+    <durationDays>6</durationDays>
+    <stackLimit>5</stackLimit>
+    <stackedEffectMultiplier>0.75</stackedEffectMultiplier>
+    <stages>
+      <li>
+        <label>囚犯被奴役</label>
+        <description>瞧瞧，我们有了新的工具！</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
   <!--==Cannibalism==-->
   <PreceptDef>
     <defName>Cannibalism_Acceptable_DeerFox</defName>
     <issue>Cannibalism</issue>
-    <label>TODO(漠视)</label>
-    <description>TODO</description>
+    <label>漠视</label>
+    <description>人肉同样是肉，没什么不一样</description>
     <impact>Low</impact>
     <displayOrderInIssue>20</displayOrderInIssue>
     <displayOrderInImpact>100</displayOrderInImpact>
@@ -36,8 +193,8 @@
   <PreceptDef>
     <defName>OrganUse_Acceptable_DeerFox</defName>
     <issue>OrganUse</issue>
-    <label>TODO(漠视)</label>
-    <description>TODO</description>
+    <label>漠视</label>
+    <description>这些东西的存在都是情有可原的</description>
     <impact>Low</impact>
     <displayOrderInIssue>0</displayOrderInIssue>
     <displayOrderInImpact>-100</displayOrderInImpact>
@@ -52,8 +209,8 @@
   <PreceptDef>
     <defName>IdeoDiversity_Disapproved_DeerFox</defName>
     <issue>IdeoDiversity</issue>
-    <label>TODO(轻度偏见)</label>
-    <description>TODO</description>
+    <label>重度偏见</label>
+    <description>除了狐疑之神，其他任何信仰都应该是被怀疑的</description>
     <impact>Low</impact>
     <displayOrderInIssue>40</displayOrderInIssue>
     <associatedMemes>
@@ -90,19 +247,19 @@
     <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
     <stages>
       <li>
-        <label>不同的思想</label>
-        <description>(思想多样憎恶-轻度)</description>
+        <label>思想多样</label>
+        <description>我并不是很想跟这家伙待在一起</description>
         <baseMoodEffect>-1</baseMoodEffect>
       </li>
       <li>
-        <label>不同的思想</label>
-        <description>(思想多样憎恶-中度)</description>
-        <baseMoodEffect>-2</baseMoodEffect>
+        <label>思想多样</label>
+        <description>噢……我想离开)</description>
+        <baseMoodEffect>-3</baseMoodEffect>
       </li>
       <li>
-        <label>不同的思想</label>
-        <description>(思想多样憎恶-重度)</description>
-        <baseMoodEffect>-3</baseMoodEffect>
+        <label>思想多样</label>
+        <description>呃我的狐疑之神啊！带我走！！</description>
+        <baseMoodEffect>-5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -113,9 +270,9 @@
     <doNotApplyToQuestLodgers>true</doNotApplyToQuestLodgers>
     <stages>
       <li>
-        <label>统一的思想</label>
-        <description>(思想统一愉悦)</description>
-        <baseMoodEffect>1</baseMoodEffect>
+        <label>思想统一</label>
+        <description>狐疑之神在上！这真的很棒</description>
+        <baseMoodEffect>5</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -138,9 +295,9 @@
     <stackLimit>5</stackLimit>
     <stages>
       <li>
-        <label>TODO(参加别的信仰的仪式)</label>
-        <description>TODO</description>
-        <baseMoodEffect>-3</baseMoodEffect>
+        <label>出席异端仪式</label>
+        <description>我的狐疑之神在上啊，他们居然相信那些东西，而我居然还去参加了那些东西的仪式？！</description>
+        <baseMoodEffect>-6</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
