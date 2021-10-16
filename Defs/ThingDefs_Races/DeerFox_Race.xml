@@ -327,6 +327,7 @@
         <minAgeForAdulthood>26</minAgeForAdulthood>
         <humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
+					<borderScale>2</borderScale>
           <aliencrowntypes>
             <li>DeerFox_Head</li>
           </aliencrowntypes>
@@ -454,6 +455,7 @@
               <drawnInBed>true</drawnInBed>
               <!--<drawnDesiccated>false</drawnDesiccated>-->
               <colorChannel>skin</colorChannel>
+              <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
               <offsets>
                 <south>
                   <crownTypes>
@@ -509,6 +511,7 @@
               <drawnInBed>true</drawnInBed>
               <!--<drawnDesiccated>false</drawnDesiccated>-->
               <colorChannel>horn</colorChannel>
+              <linkVariantIndexWithPrevious>true</linkVariantIndexWithPrevious>
               <offsets>
                 <south>
                   <crownTypes>
