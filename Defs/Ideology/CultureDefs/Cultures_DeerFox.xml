@@ -2,7 +2,7 @@
 <Defs>
   <CultureDef>
     <defName>Cultures_DeerFox</defName>
-    <label>鹿狐的文化</label>
+    <label>鹿神狐疑</label>
     <description>描述XD</description>
     <pawnNameMaker>NamerPersonDeerFox</pawnNameMaker>
     <ideoNameMaker>NamerIdeoDeerFox</ideoNameMaker>
