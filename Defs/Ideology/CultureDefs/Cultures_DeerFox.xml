@@ -3,7 +3,7 @@
   <CultureDef>
     <defName>Cultures_DeerFox</defName>
     <label>鹿神狐疑</label>
-    <description>描述XD</description>
+    <description>TODO 描述XD</description>
     <pawnNameMaker>NamerPersonDeerFox</pawnNameMaker>
     <ideoNameMaker>NamerIdeoDeerFox</ideoNameMaker>
     <deityNameMaker MayRequire="Ludeon.RimWorld.Ideology">NamerDeityAstropolitan</deityNameMaker>
