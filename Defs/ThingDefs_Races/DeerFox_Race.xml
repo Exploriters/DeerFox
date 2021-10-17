@@ -327,7 +327,8 @@
         <minAgeForAdulthood>26</minAgeForAdulthood>
         <humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
-					<borderScale>2</borderScale>
+					<borderScale>3</borderScale>
+          <atlasScale>2</atlasScale>
           <aliencrowntypes>
             <li>DeerFox_Head</li>
           </aliencrowntypes>
