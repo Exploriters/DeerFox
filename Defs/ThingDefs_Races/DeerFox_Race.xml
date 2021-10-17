@@ -163,14 +163,11 @@
       </specialShadowData>
       <ageGenerationCurve>
         <points>
-          <li>(14,0)</li>
-          <li>(16,100)</li>
-          <li>(50,100)</li>
-          <li>(60,30)</li>
-          <li>(70,18)</li>
-          <li>(80,10)</li>
-          <li>(90,3)</li>
-          <li>(100,0)</li>
+          <li>(10,0)</li>
+          <li>(10,50)</li>
+          <li>(12,100)</li>
+          <li>(16,50)</li>
+          <li>(17,0)</li>
         </points>
       </ageGenerationCurve>
       <hediffGiverSets>
@@ -327,8 +324,8 @@
         <minAgeForAdulthood>26</minAgeForAdulthood>
         <humanRecipeImport>true</humanRecipeImport>
         <alienPartGenerator>
-					<borderScale>3</borderScale>
-          <atlasScale>2</atlasScale>
+		  <borderScale>3</borderScale>
+          <atlasScale>4</atlasScale>
           <aliencrowntypes>
             <li>DeerFox_Head</li>
           </aliencrowntypes>
@@ -504,6 +501,7 @@
                 </east>
               </offsets>
               <defaultOffset>Head</defaultOffset>
+			  <drawSize>(2, 2)</drawSize>
             </li>
             <li>
               <path>Thing/Pawn/DeerFox/Horns/DeerFox_RHorn</path>
@@ -531,6 +529,7 @@
                 </east>
               </offsets>
               <defaultOffset>Head</defaultOffset>
+			  <drawSize>(2, 2)</drawSize>
             </li>
           </bodyAddons>
         </alienPartGenerator>

@@ -85,7 +85,7 @@
       <li>
         <label>殖民地有奴隶</label>
         <description>支配奴隶是非常棒的感觉</description>
-        <baseMoodEffect>15</baseMoodEffect>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
@@ -209,7 +209,7 @@
   <PreceptDef>
     <defName>IdeoDiversity_Disapproved_DeerFox</defName>
     <issue>IdeoDiversity</issue>
-    <label>重度偏见</label>
+    <label>鹿狐重度偏见</label>
     <description>除了狐疑之神，其他任何信仰都应该是被怀疑的</description>
     <impact>Low</impact>
     <displayOrderInIssue>40</displayOrderInIssue>
@@ -309,6 +309,91 @@
       <li>
         <description>被那个叫{0}的蜗牛脑子生物命令真是耻辱！</description>
         <baseMoodEffect>-5</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--Execution-->
+  <PreceptDef>
+    <defName>Execution_RespectedIfGuilty_DeerFox</defName>
+    <issue>Execution</issue>
+    <label>鹿狐注重罪犯</label>
+    <description>处决囚犯是可接受的，如果囚犯是有罪的将会是极大的快乐。</description>
+    <impact>Low</impact>
+    <displayOrderInIssue>10</displayOrderInIssue>
+    <displayOrderInImpact>1000</displayOrderInImpact>
+    <associatedMemes>
+      <li>DeerFoxMeme</li>
+    </associatedMemes>
+    <requiredMemes>
+      <li>DeerFoxMeme</li>
+    </requiredMemes>
+    <comps>
+      <li Class="PreceptComp_SelfTookMemoryThought">
+        <eventDef>ExecutedPrisonerGuilty</eventDef>
+        <thought>ExecutedPrisonerGuilty_Respected_DeerFox</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ExecutedPrisonerGuilty</eventDef>
+        <thought>ExecutedPrisonerGuilty_Know_Respected_DeerFox</thought>
+      </li>
+      <li Class="PreceptComp_KnowsMemoryThought">
+        <eventDef>ExecutedPrisonerGuilty</eventDef>
+        <thought>ExecutedPrisonerGuilty_Know_Respected_Mood_DeerFox</thought>
+      </li>
+      <li Class="PreceptComp_DevelopmentPoints">
+        <eventDef>ExecutedPrisonerGuilty</eventDef>
+        <eventLabel>处决了某人</eventLabel>
+        <points>1</points>
+      </li>
+    </comps>
+  </PreceptDef>
+  <!--ThoughtExecution-->
+  <ThoughtDef>
+    <defName>ExecutedPrisonerGuilty_Respected_DeerFox</defName>
+    <durationDays>6</durationDays>
+    <stages>
+      <li>
+        <label>处决有罪的囚犯</label>
+        <description>我处决了一名有罪的囚犯。正义得到伸张！</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>GuiltyPrisonerDied_Respected_DeerFox</defName>
+    <durationDays>6</durationDays>
+    <stages>
+      <li>
+        <label>有罪囚犯死亡（负有责任）</label>
+        <description>我杀死了一名有罪的囚犯。让正义得到伸张！</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>ExecutedPrisonerGuilty_Know_Respected_DeerFox</defName>
+    <thoughtClass>Thought_MemorySocial</thoughtClass>
+    <durationDays>20</durationDays>
+    <stackLimit>100</stackLimit>
+    <stackLimitForSameOtherPawn>3</stackLimitForSameOtherPawn>
+    <stages>
+      <li>
+        <label>处决有罪的囚犯</label>
+        <baseOpinionOffset>20</baseOpinionOffset>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <!--hm-->
+  <ThoughtDef>
+    <defName>ExecutedPrisonerGuilty_Know_Respected_Mood_DeerFox</defName>
+    <durationDays>6</durationDays>
+    <stages>
+      <li>
+        <label>有罪的囚犯被处决</label>
+        <description>我们处决了一名有罪的囚犯。正义得到伸张！</description>
+        <baseMoodEffect>3</baseMoodEffect>
       </li>
     </stages>
   </ThoughtDef>
