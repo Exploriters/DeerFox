@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <JobDef>
+    <defName>HarvestDeerFoxChocolateHorn</defName>
+    <driverClass>Explorite.JobDriver_HarvestDeerFoxChocolateHorn</driverClass>
+    <reportString>正在给TargetA取角。</reportString>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+  <WorkGiverDef>
+    <defName>HarvestDeerFoxChocolateHorn</defName>
+    <label>给动物取角</label>
+    <giverClass>Explorite.WorkGiver_HarvestDeerFoxChocolateHorn</giverClass>
+    <workType>Handling</workType>
+    <verb>取角</verb>
+    <gerund>取角</gerund>
+    <priorityInType>84</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+</Defs>

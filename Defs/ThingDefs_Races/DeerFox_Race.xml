@@ -30,6 +30,11 @@
           <li MayRequire="Ludeon.RimWorld.Royalty">SleepMist</li>
         </abilities>
       </li>
+      <li Class="Explorite.CompProperties_DeerFoxChocolateHorn">
+        <gatherResourcesIntervalDays>0.1</gatherResourcesIntervalDays>
+        <resourceAmount>1</resourceAmount>
+        <resourceDef>ThrumboHorn</resourceDef>
+      </li>
     </comps>
     <tools>
       <li>
