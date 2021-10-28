@@ -31,9 +31,9 @@
         </abilities>
       </li>
       <li Class="Explorite.CompProperties_DeerFoxChocolateHorn">
-        <gatherResourcesIntervalDays>0.1</gatherResourcesIntervalDays>
+        <gatherResourcesIntervalDays>1</gatherResourcesIntervalDays>
         <resourceAmount>1</resourceAmount>
-        <resourceDef>ThrumboHorn</resourceDef>
+        <resourceDef>DeerFoxHorn</resourceDef>
       </li>
     </comps>
     <tools>
@@ -398,7 +398,7 @@
           </colorChannels>
           <bodyAddons>
             <li>
-              <path>Thing/Pawn/DeerFox/Tail/DeerFox_Tail</path>
+              <path>Things/Pawn/DeerFox/Tail/DeerFox_Tail</path>
               <bodyPart>Tail_DeerFox</bodyPart>
               <inFrontOfBody>false</inFrontOfBody>
               <drawnInBed>false</drawnInBed>
@@ -424,7 +424,7 @@
               <defaultOffset>Tail</defaultOffset>
             </li>
             <li>
-              <path>Thing/Pawn/DeerFox/Ears/DeerFox_LEar</path>
+              <path>Things/Pawn/DeerFox/Ears/DeerFox_LEar</path>
               <bodyPart>左耳</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
@@ -452,7 +452,7 @@
               <defaultOffset>Head</defaultOffset>
             </li>
             <li>
-              <path>Thing/Pawn/DeerFox/Ears/DeerFox_REar</path>
+              <path>Things/Pawn/DeerFox/Ears/DeerFox_REar</path>
               <bodyPart>右耳</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
@@ -481,7 +481,7 @@
               <defaultOffset>Head</defaultOffset>
             </li>
             <li>
-              <path>Thing/Pawn/DeerFox/Horns/DeerFox_LHorn</path>
+              <path>Things/Pawn/DeerFox/Horns/DeerFox_LHorn</path>
               <bodyPart>左角</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
@@ -509,7 +509,7 @@
 			  <drawSize>(2, 2)</drawSize>
             </li>
             <li>
-              <path>Thing/Pawn/DeerFox/Horns/DeerFox_RHorn</path>
+              <path>Things/Pawn/DeerFox/Horns/DeerFox_RHorn</path>
               <bodyPart>右角</bodyPart>
               <inFrontOfBody>true</inFrontOfBody>
               <drawnInBed>true</drawnInBed>
@@ -541,7 +541,7 @@
       </generalSettings>
       <graphicPaths>
         <li>
-          <head>Thing/Pawn/DeerFox/Head/</head>
+          <head>Things/Pawn/DeerFox/Head/</head>
         </li>
       </graphicPaths>
 	  <thoughtSettings>

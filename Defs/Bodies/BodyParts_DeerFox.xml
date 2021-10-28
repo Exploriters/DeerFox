@@ -9,6 +9,7 @@
     <solid>true</solid>
     <alive>false</alive>
     <bleedRate>0</bleedRate>
+    <spawnThingOnRemoved>DeerFoxHorn</spawnThingOnRemoved>
   </BodyPartDef>
 
   <BodyPartDef>
